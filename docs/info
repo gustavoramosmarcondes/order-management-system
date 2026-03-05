@@ -1,0 +1,19 @@
+O sistema consiste em um CRUD de Pedidos e Produtos.
+
+Um pedido pode conter vários produtos, e um produto pode estar presente em vários pedidos. 
+Por esse motivo, foi implementado um relacionamento muitos-para-muitos entre as entidades Pedido e Produto, utilizando uma tabela intermediária chamada PedidoProduto.
+
+A aplicação permite realizar as seguintes operações:
+
+- Criar pedidos
+- Listar pedidos
+- Visualizar detalhes de um pedido
+- Atualizar pedidos
+- Excluir pedidos
+
+Cada pedido pode conter no máximo 5 produtos e o valor total do pedido não pode ultrapassar R$1000,00. 
+Essas validações são realizadas no backend para garantir a integridade das regras de negócio.
+
+O backend será desenvolvido utilizando ASP.NET Core Web API com Entity Framework Core, aplicando o uso de DTOs para transferência de dados.
+
+O frontend será desenvolvido em Angular utilizando Reactive Forms para manipulação dos formulários. Opcionalmente podem ser utilizados componentes do PrimeNG para melhorar a interface da aplicação.
